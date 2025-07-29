@@ -1,12 +1,10 @@
-/* Contenido de /Visual/css/style.css */
 
-/* Estilos generales */
 body {
   background-color: #f8f9fa;
   font-family: 'Arial', sans-serif;
 }
 
-/* Estilos para las materias */
+
 .materia {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -16,13 +14,13 @@ body {
   color: #007bff;
 }
 
-/* Estilos para el resultado */
+
 #resultado {
   font-size: 1.2em;
   font-weight: bold;
 }
 
-/* Mejoras responsivas */
+
 @media (max-width: 576px) {
   .d-flex {
     flex-direction: column;
@@ -37,10 +35,10 @@ body {
 
 
 .circular-image {
-  width: 300px;            /* Ajusta el tamaño visible según necesites */
+  width: 300px;          
   height: 300px;
-  border-radius: 50%;      /* Hace que la imagen sea circular */
-  object-fit: cover;       /* Corta el exceso y mantiene proporción */
-  overflow: hidden;        /* Oculta el contenido que sobresale */
-  border: 3px solid #007bff;  /* Borde opcional (color Bootstrap primary) */
+  border-radius: 50%;    
+  object-fit: cover;      
+  overflow: hidden;      
+  border: 3px solid #007bff; 
 }
