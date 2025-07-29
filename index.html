@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calcula tu promedio</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="icon" href="/Visual/asset/imgs/logo_chus_2.png" type="image/png">
+
+  <link rel="stylesheet" href="/Visual/css/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Calculadora de Promedio Ponderado</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#inicio">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Visual/vistas/Instrucciones.html">Instrucciones</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Visual/vistas/Contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-4">
+    <header id="inicio" class="text-center bg-light p-4 rounded shadow">
+      <h1 class="text-primary">Calculadora de Promedio Ponderado</h1>
+    </header>
+
+    <section id="instrucciones" class="tutorial mt-4 bg-info-subtle p-4 rounded shadow">
+      <h2>📘 ¿Cómo usar esta calculadora?</h2>
+      <ol>
+        <li>Ingresa el promedio que obtuviste en cada curso de tu ciclo académico inscrito y los créditos que vale.</li>
+        <li>Puedes agregar más materias usando el botón <strong>"Agregar otra materia"</strong>.</li>
+        <li>Elimina materias que no quieras considerar con el botón rojo "Eliminar".</li>
+        <li>Haz clic en <strong>"Calcular promedio"</strong> para ver tu resultado final.</li>
+      </ol>
+    </section>
+
+    <main class="mt-4">
+      <div id="materias-container" class="row g-3 justify-content-center">
+        <!-- Materias aparecerán aquí -->
+      </div>
+
+      <div class="form-check mb-3 text-center">
+        <input class="form-check-input" type="checkbox" id="toggle-nombres" onchange="mostrarOcultarNombres(this.checked)">
+        <label class="form-check-label" for="toggle-nombres">Mostrar nombres de materias</label>
+      </div>
+
+      <div class="d-flex justify-content-center gap-2 mb-3">
+        <button class="btn btn-primary" onclick="agregarMateria()">Agregar otra materia</button>
+        <button class="btn btn-success" onclick="calcularPromedio()">Calcular promedio</button>
+      </div>
+
+      <div id="error-message" class="text-center"></div>
+      <div id="resultado" class="text-center alert alert-info mt-3" role="alert"></div>
+    </main>
+
+
+    <section id="instrucciones" class="tutorial mt-4 bg-info-subtle p-4 rounded shadow">
+      <h2>📘 ¿Para qué sirve calcular tu promedio ponderado?</h2>
+      <ol class="mt-3">
+        <li>Obtener tu promedio general acumulado del ciclo académico actual.</li>
+        <li>Evaluar si calificas para beneficios como becas por excelencia académica.</li>
+        <li>Estimar cuánto necesitas mejorar en una materia para alcanzar un mejor promedio global.</li>
+        <li>Si eres alguien al que le gusta competir los primeros puestos.</li>
+      </ol>
+    </section>
+
+
+    <footer class="text-center mt-4 bg-dark text-white p-3">
+      <p>© 2025 huillajesusantonio. Todos los derechos reservados</p>
+      <a href="https://github.com/Pompinchuz" target="_blank" class="text-white fs-4 me-2">
+        <i class="bi bi-github"></i>
+      </a>
+    </footer>
+    
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <script src="/Visual/js/script.js"></script>
+</body>
+</html>
